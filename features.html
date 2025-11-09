@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Features — Green Lies Detector</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header (same as other pages) -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Green Lies Detector" class="logo">
+        <span>Green Lies Detector</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="features.html">Features</a>
+        <a href="demo.html">Demo</a>
+        <a href="technology.html">Technology</a>
+        <a href="future.html">Future</a>
+        <a href="team.html">Team</a>
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">☀️</button>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Open menu" id="navToggle">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Features</h1>
+        <p class="muted">Capabilities of the Green Lies Detector platform.</p>
+      </div>
+    </section>
+
+    <section class="container features-grid">
+      <div class="feature-card big">
+        <h3>Automated Web Scraping</h3>
+        <p>Collects sustainability claims from websites, press releases and social media at scale.</p>
+      </div>
+      <div class="feature-card big">
+        <h3>NLP & Contextual Understanding</h3>
+        <p>Transformer models and entity extraction for precise claim interpretation.</p>
+      </div>
+      <div class="feature-card big">
+        <h3>Sentiment & Claim Scoring</h3>
+        <p>Combines sentiment analysis with claim-specific heuristics to generate transparency scores.</p>
+      </div>
+      <div class="feature-card big">
+        <h3>Dashboard & Reports</h3>
+        <p>Exportable reports and historical tracking of corporate claims and scores.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <div>© <span id="year3"></span> Green Lies Detector</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
