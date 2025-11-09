@@ -1,0 +1,163 @@
+:root{
+  --bg: #0f1721;
+  --panel: #14202a;
+  --muted: #9aa5b0;
+  --accent: #1f8a53;
+  --accent-2: #2f6b4f;
+  --card: #12181d;
+  --glass: rgba(255,255,255,0.02);
+  --radius: 12px;
+  --max-width: 1100px;
+  --gap: 24px;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background: linear-gradient(180deg, #0e1a23 0%, #13392a 80%);
+  color:#e6eef1;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+  font-size:16px;
+}
+
+/* Layout container */
+.container{
+  width: 92%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+/* Header */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background: rgba(9,14,18,0.85);
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
+.nav-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:12px 0;
+}
+
+/* brand */
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit}
+.logo{width:34px;height:34px;border-radius:6px;object-fit:cover}
+.brand span{font-weight:700;font-size:14px;}
+
+/* nav */
+.nav{display:flex;gap:18px;align-items:center}
+.nav a{color:var(--muted);text-decoration:none;font-weight:600;padding:8px 12px;border-radius:8px}
+.nav a.active, .nav a:hover{color:#fff;background:rgba(255,255,255,0.02)}
+.theme-btn{background:transparent;border:0;color:var(--muted);cursor:pointer;padding:8px;border-radius:8px}
+.nav-toggle{display:none;background:transparent;border:0;color:var(--muted);font-size:20px}
+
+/* Hero */
+.hero{
+  padding:120px 0 80px;
+  text-align:center;
+  min-height:420px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.hero-inner{max-width:880px}
+.badge{display:inline-block;background:rgba(31,138,83,0.12);color:var(--accent);padding:8px 14px;border-radius:999px;font-weight:600;font-size:13px;margin-bottom:18px}
+h1{font-size:48px;margin:12px 0 8px;line-height:1.05}
+.lead{color:var(--muted);font-size:18px;margin-bottom:22px}
+
+/* CTAs */
+.btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+.btn.primary{background:linear-gradient(180deg,var(--accent),#2aa36f);color:#052013;box-shadow:0 8px 18px rgba(23,120,70,0.12)}
+.btn.ghost{background:rgba(255,255,255,0.03);color:#fff}
+
+/* Problem section */
+.problem h2{text-align:center;margin-bottom:6px}
+.problem .muted{color:var(--muted);text-align:center;margin-bottom:26px}
+.card{background:rgba(0,0,0,0.15);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+.warning-card{border:1px solid rgba(200,80,80,0.18);box-shadow:0 6px 20px rgba(200,60,60,0.03);margin:18px 0;padding:20px}
+
+/* Grid layouts */
+.three-col{display:flex;gap:18px;justify-content:center;margin-top:18px}
+.feature-card{background:rgba(255,255,255,0.02);padding:20px;border-radius:12px;flex:1;min-width:220px;text-align:left}
+.feature-card .icon{font-size:22px;margin-bottom:8px}
+
+/* How it works */
+.how .steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:20px}
+.step-card{background:rgba(255,255,255,0.02);padding:16px;border-radius:12px;min-height:140px}
+.step-card .num{font-weight:800;font-size:20px;color:var(--muted);opacity:0.9;margin-bottom:8px}
+
+/* process box */
+.process-box{margin-top:22px;background:rgba(0,0,0,0.14);border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,0.03)}
+.process-box .flow{padding:14px;background:rgba(255,255,255,0.02);border-radius:8px;text-align:center;color:var(--muted)}
+
+/* analyzer */
+.analyzer{text-align:center;padding-bottom:40px}
+.analyze-form{max-width:900px;margin:0 auto;background:rgba(255,255,255,0.02);padding:18px;border-radius:12px}
+textarea{width:100%;background:transparent;border:1px solid rgba(255,255,255,0.04);padding:14px;border-radius:8px;color:#fff;min-height:120px}
+.form-actions{display:flex;align-items:center;justify-content:space-between;margin-top:12px;gap:12px}
+.sample{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:8px 12px;border-radius:8px;color:var(--muted)}
+
+/* result */
+.result-box{margin-top:18px;background:rgba(20,30,40,0.5);padding:14px;border-radius:10px;color:var(--muted)}
+
+/* CTA Join */
+.cta-join{padding:36px 0;background:linear-gradient(90deg,rgba(20,60,40,0.75),rgba(32,90,40,0.75));border-radius:12px;margin:40px auto;max-width:1000px;text-align:center}
+
+/* Footer */
+.site-footer{margin-top:40px;padding:28px 0;background:rgba(0,0,0,0.25)}
+.footer-row{display:flex;justify-content:space-between;gap:12px;align-items:center;color:var(--muted)}
+
+/* other pages small grids */
+.features-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+.roadmap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.roadmap-card, .tech-card {background:rgba(255,255,255,0.02);padding:18px;border-radius:12px}
+.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.member-card{background:rgba(255,255,255,0.02);border-radius:12px;padding:0;overflow:hidden}
+.member-top{background:var(--accent);height:70px;display:flex;align-items:center;justify-content:center}
+.initials{width:68px;height:68px;border-radius:50%;background:rgba(0,0,0,0.2);display:flex;align-items:center;justify-content:center;font-weight:800}
+
+/* small screens */
+@media (max-width:900px){
+  h1{font-size:34px}
+  .three-col{flex-direction:column}
+  .how .steps-grid{grid-template-columns:repeat(2,1fr)}
+  .features-grid{grid-template-columns:1fr}
+  .tech-grid{grid-template-columns:repeat(2,1fr)}
+  .nav{display:none}
+  .nav-toggle{display:block}
+}
+
+/* very small */
+@media (max-width:480px){
+  .hero{padding:80px 0}
+  .nav-toggle{font-size:22px}
+  .site-header .brand span{display:none}
+}
+.loading {
+  color: #9f7aea;
+  font-style: italic;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  50% { opacity: 0.6; }
+}
+
+.analysis-result {
+  margin-top: 15px;
+  padding: 10px;
+  background: #1a1a2e;
+  border-radius: 10px;
+  color: #fff;
+  line-height: 1.5;
+  box-shadow: 0 0 10px rgba(159, 122, 234, 0.4);
+}
