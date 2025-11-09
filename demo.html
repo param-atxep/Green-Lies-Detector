@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Demo — Green Lies Detector</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Green Lies Detector" class="logo">
+        <span>Green Lies Detector</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="features.html">Features</a>
+        <a class="active" href="demo.html">Demo</a>
+        <a href="technology.html">Technology</a>
+        <a href="future.html">Future</a>
+        <a href="team.html">Team</a>
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">☀️</button>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Open menu" id="navToggle">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Live Demo</h1>
+        <p class="muted">Paste a sustainability claim and see a simulated analysis.</p>
+      </div>
+    </section>
+
+    <section class="container demo-area">
+      <form id="demoForm" class="analyze-form">
+        <textarea id="demoClaim" placeholder="Enter claim to analyze..." rows="8"></textarea>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Analyze Claim</button>
+        </div>
+      </form>
+
+      <div class="report" id="demoReport" hidden>
+        <h3>Transparency Score: <span id="score">0</span>/100</h3>
+        <p id="reportText"></p>
+        <div class="flagged"><strong>Flagged phrases:</strong><ul id="flags"></ul></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <div>© <span id="year4"></span> Green Lies Detector</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
