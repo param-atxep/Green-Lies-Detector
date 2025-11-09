@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Green Lies Detector — Home</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Top Navbar -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Green Lies Detector" class="logo">
+        <span>Green Lies Detector</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="features.html">Features</a>
+        <a href="demo.html">Demo</a>
+        <a href="technology.html">Technology</a>
+        <a href="future.html">Future</a>
+        <a href="team.html">Team</a>
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">☀️</button>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Open menu" id="navToggle">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <span class="badge">AI-Powered Transparency</span>
+        <h1>AI-Driven Green Lies Detector</h1>
+        <p class="lead">Exposing Greenwashing with the Power of AI — bringing transparency and accountability to corporate sustainability.</p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="demo.html">Try Demo</a>
+          <a class="btn ghost" href="about.html">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem / Vision -->
+    <section class="problem">
+      <div class="container">
+        <h2>The Greenwashing Problem</h2>
+        <p class="muted">Billions spent on false environmental claims while the planet suffers.</p>
+
+        <div class="card warning-card">
+          <h3>Why Greenwashing Happens</h3>
+          <p>Companies invest heavily in marketing to appear sustainable while actual practices remain unchanged.</p>
+          <div class="examples">
+            <div><strong>H&amp;M</strong><br><small>Claim: Conscious Collection — Reality: only a fraction truly sustainable</small></div>
+            <div><strong>BP</strong><br><small>Claim: Beyond Petroleum — Reality: core business still fossil fuels</small></div>
+          </div>
+        </div>
+
+        <h3 class="center">Our Vision &amp; Mission</h3>
+        <div class="three-col">
+          <div class="feature-card">
+            <div class="icon">👁️</div>
+            <h4>Transparency</h4>
+            <p>Making corporate claims verifiable and accessible.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">⚖️</div>
+            <h4>Accountability</h4>
+            <p>Holding corporations responsible for sustainability promises.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">💡</div>
+            <h4>Innovation</h4>
+            <p>Leveraging AI to detect misleading claims.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how">
+      <div class="container">
+        <h2>How It Works</h2>
+        <p class="muted">A sophisticated AI pipeline that converts corporate claims into transparency scores.</p>
+
+        <div class="steps-grid">
+          <div class="step-card"><div class="num">01</div><h4>Web Scraper</h4><p>Collects claims from websites and social media.</p></div>
+          <div class="step-card"><div class="num">02</div><h4>NLP Engine</h4><p>Extracts entities and intent with spaCy/BERT.</p></div>
+          <div class="step-card"><div class="num">03</div><h4>Sentiment &amp; Claim Scorer</h4><p>Combines sentiment with heuristics to detect greenwashing.</p></div>
+          <div class="step-card"><div class="num">04</div><h4>Output Score</h4><p>Generates a transparency score and flagged phrases.</p></div>
+        </div>
+
+        <div class="process-box">
+          <h4>Data Processing Flow</h4>
+          <div class="flow">
+            <div>Input Claim → Text Preprocessing → NLP Analysis → Sentiment Scoring → Pattern Detection → Output Score</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Try Analyzer form preview -->
+    <section class="analyzer">
+      <div class="container">
+        <h2>Try the Analyzer</h2>
+        <p class="muted">Test our AI on any corporate sustainability claim.</p>
+
+        <form id="analyzeForm" class="analyze-form">
+          <textarea id="claimText" placeholder="e.g., We are 100% carbon neutral..." rows="5"></textarea>
+          <div class="form-actions">
+            <div class="samples">
+              <button type="button" class="sample">Sample 1</button>
+              <button type="button" class="sample">Sample 2</button>
+              <button type="button" class="sample">Sample 3</button>
+            </div>
+            <button type="submit" class="btn primary">Analyze Claim</button>
+          </div>
+        </form>
+
+        <div id="analyzeResult" class="result-box" aria-live="polite" hidden></div>
+      </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="cta-join">
+      <div class="container join-inner">
+        <h3>Join Our Mission</h3>
+        <p>We're looking for developers, data scientists and advocates to build transparency.</p>
+        <div><a class="btn primary" href="https://github.com" target="_blank">Become a Contributor</a>
+        <a class="btn ghost" href="team.html">Meet the Team</a></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <div>© <span id="year"></span> Green Lies Detector</div>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy</a> <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
